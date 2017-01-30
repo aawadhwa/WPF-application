@@ -1,0 +1,27 @@
+/******************************/
+ Product Information System
+/******************************/
+
+This is very simple user friendly tool which allows employee
+of Noltap to enter products under various categories.
+
+User can select category and enter the product information
+in various fields.
+
+Clicking on save will save the information in XML file.
+
+/**************************/
+IMPORTANT
+/*************************/
+
+if user select a language German from top right corner of 
+application, then Product_German.xml will be created in C:/
+
+if user selects english then Product.xml will be created in C:/
+
+/*******************************************************/
+
+Developer :
+Abhishek Wadhwa
+Delhi,India
+

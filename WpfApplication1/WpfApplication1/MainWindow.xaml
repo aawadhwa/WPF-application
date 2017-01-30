@@ -1,0 +1,59 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nolta" Height="600" Width="600">
+    <Grid Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}">
+        <Label x:Name="lblheading" Content="Enter Product" Margin="103,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Meiryo UI" FontSize="24" Width="234"/>
+        <Label x:Name="lblSelectCategory" Content="Select Category" Margin="32,57,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.714,-0.774" HorizontalAlignment="Left" Width="93"/>
+        <ComboBox x:Name="ddCategory" Margin="245,61,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120">
+            <ComboBoxItem Content="Motor Start" IsSelected="True"/>
+            <ComboBoxItem Content="Water Technology"/>
+        </ComboBox>
+        <Label x:Name="lblProductName" Content="Product Name" Margin="32,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.714,-0.774" HorizontalAlignment="Left" Width="86"/>
+        <TextBox x:Name="txtProductName" Height="23" Margin="245,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="194"/>
+        <Button x:Name="lblSave" Content="Save" HorizontalAlignment="Left" Margin="233,519,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Label  x:Name="lblItemNumber" Content="Item Number" Margin="32,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.555,0.049" HorizontalAlignment="Left" Width="93"/>
+        <Label x:Name="lblFrom1" Content="From" Margin="32,166,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="37"/>
+        <Label x:Name="lblTo1" Content="To" Margin="245,162,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="63"/>
+        <Label x:Name="lblFrom2" Content="From" Margin="32,203,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="37"/>
+        <Label x:Name="lblTo2" Content="To" Margin="245,203,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="63"/>
+        <TextBox x:Name="txtFromNumber1" Height="23" Margin="74,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="166"/>
+        <TextBox x:Name="txtToNumber1" Height="23" Margin="319,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="166"/>
+        <TextBox x:Name="txtFromNumber2" Height="23" Margin="74,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="166"/>
+        <TextBox x:Name="txtToNumber2" Height="23" Margin="319,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="166"/>
+        <Label x:Name="lblDescription" Content="Description" HorizontalAlignment="Left" Margin="32,275,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.555,0.049" Width="93"/>
+        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Height="71" Margin="74,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="365"/>
+        <Label x:Name="lblOrderDetails" Content="Order Details" HorizontalAlignment="Left" Margin="32,392,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.555,0.049" Width="93"/>
+        <TextBox x:Name="txtTelephone" HorizontalAlignment="Left" Height="23" Margin="125,421,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" />
+        <Label x:Name="lblTelephone" Content="Telephone" HorizontalAlignment="Left" Margin="32,418,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.555,0.049" Width="93"/>
+        <Label x:Name="lblFax" Content="Fax" HorizontalAlignment="Left" Margin="32,449,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.555,0.049" Width="93"/>
+
+        <TextBox x:Name="txtFax" HorizontalAlignment="Left" Height="23" Margin="125,452,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" />
+
+        <Label x:Name="lblEmail" Content="Email" HorizontalAlignment="Left" Margin="273,418,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.555,0.049" Width="93"/>
+
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="319,421,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" />
+        <Button  HorizontalAlignment="Left" Margin="441,10,0,0" VerticalAlignment="Top" Width="44" RenderTransformOrigin="-0.021,0.62" Click="Button_Click">
+            <Image x:Name="eng" Source="images/usflag.jpg" Height="23" Width="34" RenderTransformOrigin="-0.015,-1.946"></Image>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="365,10,0,0" VerticalAlignment="Top" Width="47" RenderTransformOrigin="-0.021,0.62" Click="Button_Click_2" Height="28">
+            <Image x:Name="austria" Source="images/germany_flag.png" RenderTransformOrigin="0.121,0.138" Width="45" Height="19">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="1.781"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.367"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Image Height="50" Margin="10,7,0,0" VerticalAlignment="Top" Source="images/nolta.JPG" HorizontalAlignment="Left" Width="67"/>
+        <Image HorizontalAlignment="Left" Height="81" Margin="441,479,0,0" VerticalAlignment="Top" Width="141" Source="images/locca.JPG"/>
+        <ComboBox x:Name="ddCategory_german" Margin="245,61,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Visibility="Collapsed">
+            <ComboBoxItem Content="Motorschutz" IsSelected="True"/>
+            <ComboBoxItem Content="Wassertechnik"/>
+        </ComboBox>
+
+    </Grid>
+</Window>
